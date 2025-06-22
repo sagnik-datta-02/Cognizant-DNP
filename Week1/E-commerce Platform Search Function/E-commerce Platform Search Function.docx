@@ -1,0 +1,33 @@
+Big O Notation:
+
+Big O notation describes the upper bound of an algorithm's running time as a function of input size n. It helps to analyze how well an algorithm scales and determines its efficiency.
+O(1) – Constant time
+O(log n) – Logarithmic time
+O(n) – Linear time
+O(n log n) – Log-linear time
+O(n²) – Quadratic time
+
+Search Scenarios:
+Best Case: Item is found in the first few comparisons.
+Average Case: Item is found somewhere in the middle.
+Worst Case: Item is not found, or it's the last item in the dataset.
+
+| Algorithm     | Best Case | Average Case | Worst Case |
+| ------------- | --------- | ------------ | ---------- |
+| Linear Search | O(1)      | O(n)         | O(n)       |
+| Binary Search | O(1)      | O(log n)     | O(log n)   |
+
+ 
+Analysis
+
+Time Complexity:
+Algorithm	Time Complexity	Notes
+Linear Search	O(n)	Simple but slow for large datasets
+Binary Search	O(log n)	Requires sorted array, much faster
+
+Best Fit for Platform:
+Small product lists → Linear search may suffice.
+Large product catalog (like Amazon) → Binary search or even advanced data structures (e.g., Trie, B-Trees, or full-text search engines like Elasticsearch) are recommended.
+
+Conclusion:
+Binary search is far more efficient if data is sorted and static or infrequently updated. 
